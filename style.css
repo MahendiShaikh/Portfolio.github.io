@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color:white;
+    text-transform: lowercase;
+    font-size: 32px;
+    pointer-events: none;
+}
+
+.navbar-brand span{
+    text-transform: uppercase;
+    font-size:2.5rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    position: relative;
+    display:inline-block;
+    font-size:1.2rem;
+}
+
+
+.nav-item a{
+    color: white;
+}
+
+.nav-link:after{
+    content: '';
+    display: block;
+    height:2.5px;
+    left:50%;
+    bottom: 0;
+    width: 0;
+    background:white;
+    transition: width 0.3s ease 0s,left 0.3s ease 0s;
+    position: absolute;
+}
+.nav-link:hover:after{
+    width:100%;
+    left: 0;
+}
+
+.container .fa-bars{
+    color: white;
+    padding-top: 6px;
+}
+/* ----------------Main Section------------------ */
+
+.main{
+    width: 100%;
+    height:100vh;
+}
+
+.row img{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  border-radius:70%;
+  /* border: 2px solid black; */
+  padding:10px;
+}
+
+.main .content{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    padding-top:150px;
+    padding-left: 50px;
+}
+
+.main .paragraph{
+    height:90vh;
+}
+
+.content .btn2{
+    background-color:lightgray;
+    font-size:1.5rem;
+    padding:7px;
+    text-decoration: none;
+    color:black;
+    border: 1px dotted black;
+    font-weight:700;
+    font-style: italic;
+    box-shadow: 4px 4px 4px lightgray;
+    border-radius:50px;
+    
+}
+
+/* ----------------About Section ------------------ */
+
+.about-heading{
+    text-transform: uppercase;
+    font-size:2.5rem;
+    letter-spacing:0.5px;
+    word-spacing:3px;
+    background-color: lightgray;
+}
+
+.nav-link{
+    font-size:1.5rem;
+    margin-left:15px;
+}
+
+.education .first{
+    border-bottom: 2px solid black;
+    margin:15px;
+    padding:30px;
+    
+}
+
+.education .percentage{
+    font-weight: 500;
+}
+
+.education .first, .second, .third p{
+    font-size: 1.2rem;
+    font-weight:400;
+}
+
+.education .second{
+    border-bottom: 2px solid black;
+    padding:30px;
+    margin: 15px;
+}
+
+.education .third{
+    padding:30px;
+    margin: 15px;
+} 
+
+.list{
+    font-size:1.5rem;
+    margin:30px;
+    list-style: disc;
+}
+
+.list li{
+    padding:10px;
+}
+
+.course{
+    margin: 30px;
+    font-size:1.2rem;
+}
+
+.course li{
+    padding:10px;
+}
+
+
+/* ----------------Project Section ------------------ */
+
+
+.project-heading{
+    text-transform: uppercase;
+    font-size:2.5rem;
+    letter-spacing:0.5px;
+    word-spacing:3px;
+    background-color: lightgray;
+    
+}
+
+.container .cards{
+    padding:80px 100px 80px 100px;
+}
+
+.container .card-title{
+    font-size:1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing:0.1rem;
+    padding-bottom:10px;
+}
+
+.container .card-subtitle{
+    font-size: 1rem;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.container .card-text{
+    font-size: 1.2rem;
+    font-weight:400;
+}
+
+.cards a{
+    font-size:1.2rem;
+    color:blue;
+    font-weight:400;
+}
+
+.cards .card-body{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding:20px;
+}
+
+/* ----------------Contact Me Section------------------ */
+
+.contact-heading{
+    text-transform: uppercase;
+    font-size:2.5rem;
+    letter-spacing:0.5px;
+    word-spacing:3px;
+    background-color: lightgray;
+}
+
+.contact-section{
+    margin: 10px;
+    height: 88vh;
+}
+
+.details{
+    padding:10px;
+    text-align: center;
+}
+
+.icon{
+    font-size: 1.5rem;
+}
+.email, .mobile{
+    display: inline-block;
+    font-size:1.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.email-id, .mobile-no{
+    padding-bottom:20px;
+    font-size: 1.3rem;
+}
+
+.mobile-no{
+    padding-left: 15px;
+}
+
+.details-end{
+    padding:20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.box{
+    box-sizing: border-box;
+    margin-top:40px;
+    padding-top: 20px;
+    box-shadow: 7px 7px 7px lightgray ;
+}
+
+/* ----------------Footer Section------------------ */
+
+.footer{
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 1.2rem;
+    word-spacing:3px
+}
+
+/* ----------------Media Queries------------------ */
+
+@media(max-width:576px){
+    .container .paragraph .content{
+        padding-top:0;
+        font-size:2.5rem;
+    }
+
+    .main{
+        height:110vh;
+        padding:0;
+    }
+
+    .paragraph .img{    
+        width:100%;
+        border-radius:6%;
+        object-fit: none;
+        height:60%;
+        margin-left:10px;
+        margin-top: 50px;
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    .education .first,.second,.third p{
+        font-size: 1rem;
+    }
+
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:120vh;
+        margin-top:30px;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .project .cards{
+        padding-left:50px;
+    }
+
+    .container .cards{
+        padding-top: 10px;
+    }
+
+    .contact-heading{
+        font-size: 2rem;
+    }
+
+    .card-1, .card-2{
+        margin-bottom:25px;
+    }
+
+    .details-end i{
+        display: none;
+    }
+
+    .box{
+        box-shadow: 7px 7px 7px lightgray;
+    }
+
+    .footer{
+        padding: 10px;
+        margin-top:60px;
+    }
+}
+
+@media(min-width:577px) and (max-width:768px){
+    .container .paragraph .content{
+        padding-top:0;
+        font-size:2.5rem;
+    }
+
+    .main{
+        height:98vh;
+        padding:0;
+    }
+
+    .paragraph .img{    
+        width:100%;
+        padding-left: 50px;
+
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    .first,.second,.third p{
+        font-size: 1rem;
+    }
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:90vh;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .project .cards{
+        padding-left:200px;
+    }
+
+    .container .cards{
+        padding-top: 10px;
+    }
+
+    .contact-heading{
+        font-size: 2rem;
+    }
+
+    .card-1, .card-2{
+        margin-bottom:25px;
+    }
+}
+
+@media(min-width:769px) and (max-width:992px){
+    .container .paragraph .content{
+        padding-top:0;
+        font-size:2.5rem;
+    }
+
+    .container .content{
+         height:20vh; 
+    }
+
+    .container .paragraph{
+         height:70vh;
+    } 
+
+    .main{
+        height:80vh;
+        padding:0;
+    }
+
+    .paragraph .img{    
+        width:80%;
+        padding-left: 50px;
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    .first,.second,.third p{
+        font-size: 1rem;
+    }
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:65vh;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .project .cards{
+        padding-left:200px;
+    }
+
+    .container .cards{
+        padding-top: 10px;
+    }
+
+    .contact-heading{
+        font-size: 2rem;
+    }
+
+    .contact-section{
+        height:60vh;
+    }
+
+    .card-1, .card-2{
+        margin-bottom:25px;
+    }
+}
+
+@media(min-width:993px) and (max-width:1200px){
+    .container .paragraph .content{
+        padding-top:100px;
+        font-size:2.5rem;
+    }
+
+    .container .content{
+         height:50vh; 
+    }
+
+    .container .paragraph{
+         height:90vh; 
+    } 
+
+    .paragraph .img{    
+        width:50%;
+        height:60%;
+        padding: 0;
+        height: 80vh;
+
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    .first,.second,.third p{
+        font-size: 1rem;
+    }
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:120vh;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .project .cards{
+        padding-left:70px;
+    }
+
+    .container .cards{
+        padding: 30px;
+    }
+
+    .contact-heading{
+        font-size: 2rem;
+    }
+    
+   .footer{
+    margin-top: 70px;
+   }
+}
+
+
+

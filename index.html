@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+  <!--------------- Navbar Tab ----------------->
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <a class="navbar-brand" style="font-size: 2rem;" href="#"><span style="color:pink">P</span>ortfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-2x navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end text-uppercase " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active px-lg-4" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-------------- Main Section Tab --------------->
+
+  <section class="main py-5 bg-light" id="home">
+    <div class="container">
+      <div class="row paragraph">
+        <div class="col-lg-6 content">
+          Hi, This is <br>
+          <strong>MAHENDI SHAIKH</strong> <br>
+          <a class="btn2" href="./Mahendi Shaikh - Resume.pdf" download="">Download Resume</a>
+        </div>
+        <div class="col-lg-6 img">
+          <img src="./profile photo.jpg" alt="Profile">
+        </div>
+      </div>
+    </div>
+    </section>
+
+  <!--------------- About Section Tab ---------------->
+
+  <section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+       <div class="about-heading py-3 text-center">
+        <strong>About Me</strong>
+       </div>
+    </div>
+
+    <div class="row py-5 about-me">
+
+      <ul class="nav nav-tabs " id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="education-tab" style="color:black; font-weight:600; text-transform: uppercase" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="true">Education</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="skills-tab" data-bs-toggle="tab" style="color:black; font-weight:600; text-transform: uppercase;" data-bs-target="#skills-tab-pane" type="button" role="tab" aria-controls="skills-tab-pane" aria-selected="false">Skills</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="certificates-tab" data-bs-toggle="tab" style="color:black; font-weight:600; text-transform:uppercase" data-bs-target="#certificates-tab-pane" type="button" role="tab" aria-controls="certificates-tab-pane" aria-selected="false">Certificates</button>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active education" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+          <div class="col-lg-4 first">
+            <h3 style="font-size:2rem;"><strong>SSC - 2017</strong></h3>
+            <p>Anglo Urdu Boy's High School</p>
+            <p class="percentage">83.40%</p>
+          </div>
+          <div class="col-lg-4 second">
+            <h3 style="font-size:2rem;"><strong>HSC - 2019</strong></h3>
+            <p>Poona College of Arts, Science and Commerce</p>
+            <p class="percentage">66.77%</p>
+          </div>
+          <div class="col-lg-4 third">
+            <h3 style="font-size:2rem;"><strong>BSc(CS) - 2022</strong></h3>
+            <p>Poona College of Arts, Science and Commerce</p>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="skills-tab-pane" role="tabpanel" aria-labelledby="skills-tab" tabindex="0">
+          <ol class="list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </div>
+
+        <div class="tab-pane fade " id="certificates-tab-pane" role="tabpanel" aria-labelledby="certificates-tab" tabindex="0">
+          <ol class="course">
+            <li>HTML Course Completion Certificate by SOLOLEARN</li>
+            <li>CSS Completion Certificate by SOLOLEARN</li>
+            <li>TCS iON Career Edge Course</li>
+          </ol>
+        </div>
+      </div> 
+      </div> 
+  </section>
+
+   <!----------------- Project Section Tab ----------------->
+
+   <section class="project" id="projects">
+    <div class="container">
+
+      <div class="row py-5">
+        <div class="project-heading py-3 text-center">
+         <strong>Projects</strong>
+        </div>
+      </div> 
+
+      <div class="row cards">
+        <div class="col-lg-4">
+          <div class="card text-center card-1" style="width:18rem;">
+            <div class="card-body bg-secondary text-white">
+              <h5 class="card-title">Color-Click</h5>
+              <h6 class="card-subtitle mb-2" style="color:lightgrey;">using HTML CSS and JavaScript</h6>
+              <p class="card-text">
+                In this project there is a click button which when clicked the background color changes.
+                Click Event Listener is used in this project.
+              </p>
+              <a href="https://mahendishaikh.github.io/colorClick.github.io/" class="card-link" style="color:pink; text-transform: uppercase; font-weight:500;letter-spacing:1px;" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="card text-center card-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Static Website</h5>
+              <h6 class="card-subtitle mb-2 text-muted">using HTML CSS</h6>
+              <p class="card-text">
+                This project is a responsive static website which includes three pages home, about and contact us.
+              </p>
+              <a href="https://mahendishaikh.github.io/my-channel-website.github.io/" class="card-link" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card text-center card-3" style="width: 18rem;">
+            <div class="card-body bg-secondary text-white">
+              <h5 class="card-title">Message Display</h5>
+              <h6 class="card-subtitle mb-2" style="color:lightgrey;">using HTML CSS JavaScript</h6>
+              <p class="card-text">
+                In this project there is an input field where you can enter a message and when 
+                clicked on submit then the message will be displayed below.
+              </p>
+              <a href="https://mahendishaikh.github.io/messageDisplay.github.io/" class="card-link" style="color:pink; text-transform: uppercase; font-weight:500;letter-spacing:1px;" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <!------------------ Contact Section Tab ------------------->
+
+   <section class="contact" id="contact">
+      <div class="container contact-section">
+        <div class="row py-5">
+          <div class="contact-heading py-3 text-center">
+           <strong>Contact Me</strong>
+          </div>
+        </div> 
+
+          <div class="box">
+            <div class="col-lg-12 details">
+              <i class="fa-solid fa-envelope icon"></i>
+              <h4 class="email">Email</h4>
+              <p class="email-id">mahendisk2002@gmail.com</p>
+  
+              <i class="fa-solid fa-phone icon"></i>
+              <h4 class="mobile">Mobile No.</h4>
+              <p class="mobile-no">7276867221</p>
+            </div>
+            
+            <div class="row">
+              <div class="col-lg-12 details-end">
+                <h5 style="display:inline-block; font-weight:800;">You can contact me on these details</h5>
+                <i class="fa-solid fa-arrow-up" style="font-size:1.8rem; margin-left:8px;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+   <!---------------- Footer Tab ------------------>
+
+   <section class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          Copyright 2022
+          <i class="fa-solid fa-copyright"></i>
+          Mahendi Shaikh
+        </div>
+      </div>
+    </div>
+   </section>
+   </section>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
