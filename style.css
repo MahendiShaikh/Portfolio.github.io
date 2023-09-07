@@ -302,7 +302,7 @@ body{
         font-size: 1rem;
     }
 
-    .education .first,.second,.third p{
+    .education .first,.second,.third, .fourth p{
         font-size: 1rem;
     }
 
@@ -325,6 +325,10 @@ body{
     }
 
     .education .third{
+        padding: 10px;
+    }
+
+    .education .fourth{
         padding: 10px;
     }
 
@@ -587,6 +591,3 @@ body{
     margin-top: 70px;
    }
 }
-
-
-
