@@ -111,7 +111,7 @@ body{
     margin-left:15px;
 }
 
-.education .first{
+.education .first, .second, .third, .fourth{
     border-bottom: 2px solid black;
     margin:15px;
     padding:30px;
@@ -122,21 +122,27 @@ body{
     font-weight: 500;
 }
 
-.education .first, .second, .third p{
+.education .first, .second, .third, .fourth p{
     font-size: 1.2rem;
     font-weight:400;
 }
 
-.education .second{
+/* .education .second{
     border-bottom: 2px solid black;
     padding:30px;
     margin: 15px;
-}
+} */
 
-.education .third{
+/* .education .third{
     padding:30px;
     margin: 15px;
-} 
+}  */
+
+/* .education .third{
+    border-bottom: 2px solid black;
+    padding:30px;
+    margin: 15px;
+} */
 
 .list{
     font-size:1.5rem;
