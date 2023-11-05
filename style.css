@@ -190,6 +190,7 @@ color: white;
 }
 
 .container .card-img-top{
+    width: 25vh;
     transition: .3s;
 }
 
@@ -198,7 +199,7 @@ color: white;
 }
 
 .container .card-title{
-    font-size:1.8rem;
+    font-size:1.5rem;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing:0.1rem;
@@ -206,7 +207,7 @@ color: white;
 }
 
 .container .card-text{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight:400;
 }
 
