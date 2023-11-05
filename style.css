@@ -60,22 +60,23 @@ body{
 .main{
     width: 100%;
     height:100vh;
+    background-color: black;
 }
 
 .row img{
-  height:100%;
-  width:100%;
+  height:60%;
+  width:60%;
   object-fit:cover;
-  border-radius:70%;
-  /* border: 2px solid black; */
-  padding:10px;
+  margin:15%;
+  box-shadow: 5px 5px 8px #888888;
 }
 
 .main .content{
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     padding-top:150px;
     padding-left: 50px;
+    color: white;
 }
 
 .main .paragraph{
@@ -83,17 +84,16 @@ body{
 }
 
 .content .btn2{
-    background-color:lightgray;
+    background-color:pink;
     font-size:1.5rem;
-    padding:7px;
-    text-decoration: none;
+    letter-spacing:1.2px;
+    padding:9px;
+    text-decoration:underline;
+    text-transform: uppercase;
     color:black;
-    border: 1px dotted black;
-    font-weight:700;
-    font-style: italic;
-    box-shadow: 4px 4px 4px lightgray;
-    border-radius:50px;
-    
+    font-weight:800;
+    box-shadow: 2px 2px 2px lightgray;
+    border-radius:50px;  
 }
 
 /* ----------------About Section ------------------ */
@@ -106,16 +106,38 @@ body{
     background-color: lightgray;
 }
 
+.about{
+    background-color: black;
+}
+
 .nav-link{
     font-size:1.5rem;
     margin-left:15px;
 }
 
+.nav-tabs {
+    background-color: black; /* Set the background color to black */
+}
+
+.nav-tabs .nav-item {
+    background-color: white; /* Set the background color of each tab to white */
+    border: none; /* Remove the border */
+    margin-right:8px;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: black; /* Set the text color to black */
+}
+
 .education .first, .second, .third, .fourth{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     margin:15px;
     padding:30px;
     
+}
+
+.tab-content{
+color: white;
 }
 
 .education .percentage{
@@ -126,23 +148,6 @@ body{
     font-size: 1.2rem;
     font-weight:400;
 }
-
-/* .education .second{
-    border-bottom: 2px solid black;
-    padding:30px;
-    margin: 15px;
-} */
-
-/* .education .third{
-    padding:30px;
-    margin: 15px;
-}  */
-
-/* .education .third{
-    border-bottom: 2px solid black;
-    padding:30px;
-    margin: 15px;
-} */
 
 .list{
     font-size:1.5rem;
@@ -176,8 +181,20 @@ body{
     
 }
 
-.container .cards{
-    padding:80px 100px 80px 100px;
+.project{
+    background-color: black;
+}
+
+.container .card{
+    padding:10px;
+}
+
+.container .card-img-top{
+    transition: .3s;
+}
+
+.container .card-img-top:hover{
+    transform:scale(1.2);
 }
 
 .container .card-title{
@@ -188,27 +205,9 @@ body{
     padding-bottom:10px;
 }
 
-.container .card-subtitle{
-    font-size: 1rem;
-    padding-bottom: 10px;
-    text-decoration: underline;
-}
-
 .container .card-text{
     font-size: 1.2rem;
     font-weight:400;
-}
-
-.cards a{
-    font-size:1.2rem;
-    color:blue;
-    font-weight:400;
-}
-
-.cards .card-body{
-    border: 3px solid black;
-    border-radius: 10px;
-    padding:20px;
 }
 
 /* ----------------Contact Me Section------------------ */
@@ -221,8 +220,12 @@ body{
     background-color: lightgray;
 }
 
+.contact{
+    background-color: black;
+}
+
+
 .contact-section{
-    margin: 10px;
     height: 88vh;
 }
 
@@ -261,6 +264,7 @@ body{
     margin-top:40px;
     padding-top: 20px;
     box-shadow: 7px 7px 7px lightgray ;
+    background-color:white;
 }
 
 /* ----------------Footer Section------------------ */
@@ -274,24 +278,31 @@ body{
 
 /* ----------------Media Queries------------------ */
 
-@media(max-width:576px){
+ @media(min-width:200px) and (max-width:360px){
     .container .paragraph .content{
         padding-top:0;
         font-size:2.5rem;
     }
 
+    .container .content{
+         height:25vh; 
+    }
+
+    .container .content .btn2{
+        font-size:1.2rem; 
+   }
+
+    .container .paragraph{
+         height:90vh;
+    } 
+
     .main{
-        height:110vh;
-        padding:0;
+        height:90vh;
     }
 
     .paragraph .img{    
-        width:100%;
-        border-radius:6%;
-        object-fit: none;
-        height:60%;
-        margin-left:10px;
-        margin-top: 50px;
+        width:50vh;
+        padding-left: 50px;
     }
 
     .about-heading{
@@ -299,21 +310,15 @@ body{
     }
 
     .nav-link{
-        font-size: 1rem;
+        font-size:0.6rem;
     }
 
-    .education .first,.second,.third, .fourth p{
+    .first,.second,.third,.fourth p{
         font-size: 1rem;
     }
-
 
     .list{
         font-size: 1.4rem;
-    }
-
-    .about{
-        height:120vh;
-        margin-top:30px;
     }
 
     .education .first{
@@ -336,20 +341,108 @@ body{
         font-size: 2rem;
     }
 
-    .project .cards{
-        padding-left:50px;
-    }
+    .card .d-flex{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }  
+    .card, .card-1, .card-2, .card-3, .card-4, .card-text{
+        display: none;
+    } 
 
-    .container .cards{
+     .container .card{
         padding-top: 10px;
-    }
+    }  
 
     .contact-heading{
         font-size: 2rem;
     }
 
+    .contact-section{
+        height:100vh;
+    }
+
     .card-1, .card-2{
         margin-bottom:25px;
+    }
+}
+
+@media(max-width:576px){
+    .container .paragraph .content{
+        padding-top:0;
+        font-size:2.5rem;
+    }
+
+    .main{
+        height:90vh;
+    }
+
+    .paragraph .img{    
+        width:100vh;
+        border-radius:6%;
+        object-fit: none;
+        height:70%;
+        margin-left:10px;
+        margin-top: 50px;
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 0.8rem;
+    }
+
+    .education .first,.second,.third, .fourth p{
+        font-size: 1rem;
+    }
+
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:120vh;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .education .fourth{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .project .card{
+        padding-left:10px;
+    } 
+
+ .container .card{
+        padding-top: 10px;
+    } 
+
+    .contact-heading{
+        font-size: 2rem;
+    }
+
+    .card .d-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .details-end i{
@@ -368,39 +461,38 @@ body{
 
 @media(min-width:577px) and (max-width:768px){
     .container .paragraph .content{
-        padding-top:0;
         font-size:2.5rem;
+        padding: 10px;
     }
 
     .main{
-        height:98vh;
+        height:100vh;
         padding:0;
     }
 
     .paragraph .img{    
         width:100%;
         padding-left: 50px;
-
     }
 
     .about-heading{
         font-size: 2rem;
     }
 
+    .about{
+        height:120vh;
+    }
+
     .nav-link{
         font-size: 1rem;
     }
 
-    .first,.second,.third p{
+    .first,.second,.third, .fourth p{
         font-size: 1rem;
     }
 
     .list{
         font-size: 1.4rem;
-    }
-
-    .about{
-        height:90vh;
     }
 
     .education .first{
@@ -415,17 +507,22 @@ body{
         padding: 10px;
     }
 
+    .education .fourth{
+        padding: 10px;
+    }
     .project-heading{
         font-size: 2rem;
     }
 
-    .project .cards{
-        padding-left:200px;
-    }
-
-    .container .cards{
+    .container .card{
         padding-top: 10px;
-    }
+    } 
+
+   .card .d-flex{
+        flex-direction: column;
+         justify-content: center;
+        align-items: center; 
+    } 
 
     .contact-heading{
         font-size: 2rem;
@@ -443,20 +540,18 @@ body{
     }
 
     .container .content{
-         height:20vh; 
+         height:25vh; 
     }
 
     .container .paragraph{
-         height:70vh;
+         height:95vh;
     } 
 
     .main{
-        height:80vh;
-        padding:0;
+        height:100vh;
     }
 
     .paragraph .img{    
-        width:80%;
         padding-left: 50px;
     }
 
@@ -468,86 +563,7 @@ body{
         font-size: 1rem;
     }
 
-    .first,.second,.third p{
-        font-size: 1rem;
-    }
-
-    .list{
-        font-size: 1.4rem;
-    }
-
-    .about{
-        height:65vh;
-    }
-
-    .education .first{
-        padding: 10px;
-    }
-
-    .education .second{
-        padding: 10px;
-    }
-
-    .education .third{
-        padding: 10px;
-    }
-
-    .project-heading{
-        font-size: 2rem;
-    }
-
-    .project .cards{
-        padding-left:200px;
-    }
-
-    .container .cards{
-        padding-top: 10px;
-    }
-
-    .contact-heading{
-        font-size: 2rem;
-    }
-
-    .contact-section{
-        height:60vh;
-    }
-
-    .card-1, .card-2{
-        margin-bottom:25px;
-    }
-}
-
-@media(min-width:993px) and (max-width:1200px){
-    .container .paragraph .content{
-        padding-top:100px;
-        font-size:2.5rem;
-    }
-
-    .container .content{
-         height:50vh; 
-    }
-
-    .container .paragraph{
-         height:90vh; 
-    } 
-
-    .paragraph .img{    
-        width:50%;
-        height:60%;
-        padding: 0;
-        height: 80vh;
-
-    }
-
-    .about-heading{
-        font-size: 2rem;
-    }
-
-    .nav-link{
-        font-size: 1rem;
-    }
-
-    .first,.second,.third p{
+    .first,.second,.third,.fourth p{
         font-size: 1rem;
     }
 
@@ -571,17 +587,186 @@ body{
         padding: 10px;
     }
 
+    .education .fourth{
+        padding: 10px;
+    }
+
     .project-heading{
         font-size: 2rem;
     }
 
-    .project .cards{
-        padding-left:70px;
+    .card .d-flex{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    } 
+
+    .contact-heading{
+        font-size: 2rem;
     }
 
-    .container .cards{
-        padding: 30px;
+    .contact-section{
+        height:90vh;
     }
+
+    .card-1, .card-2{
+        margin-bottom:25px;
+    }
+}
+
+@media(min-width:993px) and (max-width:1200px){
+    .container .paragraph .content{
+        padding-top:100px;
+        font-size:2.5rem;
+    }
+
+    .container .content{
+         height:50vh; 
+    }
+
+
+    .container .paragraph{
+         height:50vh; 
+         padding-top:100px;   
+    } 
+
+    .main{
+        height:95vh;
+    }
+
+    .paragraph .img{    
+        width:50%;
+        height: 60vh;
+
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    .first,.second,.third, .fourth p{
+        font-size: 1rem;
+    }
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:130vh;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .education .fourth{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .card .d-flex{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center; 
+    } 
+
+    .contact-heading{
+        font-size: 2rem;
+    }
+    
+   .footer{
+    margin-top: 70px;
+   }
+}
+
+
+@media(min-width:1201px) and (max-width:1450px){
+    .container .paragraph .content{
+        padding-top:100px;
+        font-size:2.5rem;
+        padding-left:130px;
+    }
+
+    .container .content{
+         height:50vh; 
+    }
+
+    .container .paragraph{
+         height:90vh; 
+    } 
+
+    .paragraph .img{    
+        width:75vh;
+        height:75vh;
+        margin-left:100px ;
+    }
+
+    .about-heading{
+        font-size: 2rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    .first,.second,.third p{
+        font-size: 1rem;
+    }
+
+    .list{
+        font-size: 1.4rem;
+    }
+
+    .about{
+        height:130vh;
+    }
+
+    .education .first{
+        padding: 10px;
+    }
+
+    .education .second{
+        padding: 10px;
+    }
+
+    .education .third{
+        padding: 10px;
+    }
+
+    .education .fourth{
+        padding: 10px;
+    }
+
+    .project-heading{
+        font-size: 2rem;
+    }
+
+    .card .d-flex{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;  
+    } 
+
+    .container .card{
+        padding: 10px;
+    }
+
 
     .contact-heading{
         font-size: 2rem;
